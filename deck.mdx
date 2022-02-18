@@ -1,0 +1,190 @@
+import {CodeSurfer} from "code-surfer";
+import {vsDark} from "@code-surfer/themes";
+import i from './static/img.png';
+
+export const theme = vsDark;
+
+# 👋
+
+Learn Go in 30 mins
+
+---
+### Why go
+
+- Easy to learn, Expressiveness, Readable => Simple & elegant
+- Fast build and portable binary
+- Orthogonal features set
+- It doesn't compete with features
+- Adding features will not make go better, It will just make it bigger
+- Widely used in open source projects - k8s, docker, terraform, Cockroach DB ...
+
+---
+
+<img src={i} />
+
+---
+
+### Things that Go does not have
+
+- implicit numeric conversions
+- classes
+- method overloading
+- operator overloading
+- default parameters
+- <span style="color:orange">generics</span>
+- exceptions
+- macros
+- function annotations
+- thread-local storage
+
+---
+
+<CodeSurfer>
+
+```go 1 file=./code_samples/main/main.go title="The first go program"
+```
+```go 3 file=./code_samples/main/main.go title="The first go program"
+```
+```go 5,7 file=./code_samples/main/main.go title="The first go program"
+```
+```go 6 file=./code_samples/main/main.go title="The first go program"
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go 4:8 file=./code_samples/vars.go title="Language construct - Variables and assignments" subtitle="Basic"
+```
+```go 10:14 file=./code_samples/vars.go title="Language construct - Variables and assignments" subtitle="Arrays and slices"
+```
+```go 15:20 file=./code_samples/vars.go title="Language construct - Variables and assignments" subtitle="Maps"
+```
+
+</CodeSurfer>
+
+---
+### Language construct - Data types
+Primitive Types
+- bool
+- string
+- int  int8  int16  int32  int64
+- uint uint8 uint16 uint32 uint64 uintptr
+- byte // alias for uint8
+- rune // alias for int32, represents a Unicode code point
+- float32 float64
+- complex64 complex128
+
+---
+
+### Language construct - Data types
+Composite Types
+- Non-Reference Types
+    - Arrays
+    - Structs
+- Reference Types
+    - Slices
+    - Maps
+    - Channels
+    - Pointers
+    - Function/Methods
+- Interface
+
+---
+
+<CodeSurfer>
+
+```go 5,7 file=./code_samples/loops.go title="Language construct - Loops" subtitle="Basic for loop"
+```
+```go 9,11 file=./code_samples/loops.go title="Language construct - Loops" subtitle="For as while loop"
+```
+```go 13 file=./code_samples/loops.go title="Language construct - Loops" subtitle="Infinite for"
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurfer>
+
+```go 6 file=./code_samples/loop_array.go title="Language construct - Loops" subtitle="Looping an array"
+```
+```go 7,9 file=./code_samples/loop_array.go title="Language construct - Loops" subtitle="Looping an array"
+```
+
+</CodeSurfer>
+
+---
+<CodeSurfer>
+
+```go 6 file=./code_samples/loop_maps.go title="Language construct - Loops" subtitle="Looping a map"
+```
+```go 7,9 file=./code_samples/loop_maps.go title="Language construct - Loops" subtitle="Looping a map"
+```
+
+</CodeSurfer>
+
+---
+<CodeSurfer>
+
+```go 7,9,11,13 file=./code_samples/if_else.go title="Language construct - Conditionals" subtitle="if else ladder"
+```
+
+</CodeSurfer>
+
+---
+<CodeSurfer>
+
+```go 10,11,13,15,17 file=./code_samples/switch.go title="Language construct - Conditionals" subtitle="Switch"
+```
+
+</CodeSurfer>
+
+---
+<CodeSurfer>
+
+```go 3:6 file=./code_samples/structs.go title="Language construct - Structs" subtitle="Defining a struct"
+```
+```go 8:10 file=./code_samples/structs.go title="Language construct - Structs" subtitle="Method on struct with value receiver"
+```
+```go 12:14 file=./code_samples/structs.go title="Language construct - Structs" subtitle="Method on struct with pointer receiver"
+```
+```go 17:23 file=./code_samples/structs.go title="Language construct - Structs" subtitle="Creating instance of struct"
+```
+```go 24:25 file=./code_samples/structs.go title="Language construct - Structs" subtitle="Invoking method on struct"
+```
+
+</CodeSurfer>
+
+---
+<CodeSurfer>
+
+```go 5:7 file=./code_samples/interfaces.go title="Language construct - Interfaces" subtitle="Defining an interface"
+```
+```go 9:13 file=./code_samples/interfaces.go title="Language construct - Interfaces" subtitle="Struct implementing interface"
+```
+```go 15:19 file=./code_samples/interfaces.go title="Language construct - Interfaces" subtitle="Another struct implementing interface"
+```
+```go 22 file=./code_samples/interfaces.go title="Language construct - Interfaces" subtitle="Creating instance of struct"
+```
+```go 24[21:35] file=./code_samples/interfaces.go title="Language construct - Interfaces" subtitle="Invoking method on interface"
+```
+
+</CodeSurfer>
+
+---
+
+### Hands on
+1. Given an array of integers create two slices one containing +ve ints and one containing -ve ints
+2. Create account, add funds to the account, withdraw funds from account, print balance
+3. Area and perimeter of rectangle, square and circle
+---
+
+### References
+- Installing go: `brew install go`
+- [Go tour](https://go.dev/tour/welcome/)
+- [Go by examples](https://gobyexample.com/)
+- [Rob Pike - Simplicity is Complicated](https://www.youtube.com/watch?v=rFejpH_tAHM)
+- Mastering Go by Mihalis Tsoukalos
